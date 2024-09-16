@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            height: 95vh;
+            width: 81vw;
+            background-color: black;
+            padding: 10px;
+        }
+        .main1{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 7px;
+            padding: 10px;
+        }
+        .c1{
+            background-color: red;
+        }
+        .c2{
+            background-color:chocolate;
+        }
+        .c3{
+            background-color: orange;
+        }
+        .c4{
+            background-color: rgb(4, 71, 4);
+        }
+        .c5{
+            background-color: green;
+            
+        }
+        .c6{
+            background-color:aquamarine;
+        }
+        
+        .main2{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+            left: 370px;
+            top: -191px;
+        }
+        .c7{
+            background-color: red;
+            grid-column: 1/3;
+           
+        }
+        .c8{
+            background-color:chocolate;
+            grid-row: 1/3;
+            grid-column: 3/4;
+            
+        }
+        .c9{
+            background-color: orange;
+        }
+        .c10{
+            background-color: rgb(4, 71, 4);
+           
+        }
+        .main3{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns:repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+            left: 740px;
+            top: -381px;
+        }
+    
+        .c11{
+            background-color: red;
+            grid-column: 2/4;
+            grid-row: 2/3;
+           
+        }
+        .c12{
+            background-color:chocolate;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            
+        }
+        .c13{
+            background-color: orange;
+            grid-column: 1/4;
+        }
+        .c14{
+            background-color: rgb(4, 71, 4);
+            grid-column: 1/2;
+            grid-row: 2/3;
+            
+        }
+        .main4{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+            top: -370px;
+        }
+        .c15{
+            background-color: red;
+            grid-column: 3/5;
+            grid-row: 1/2;
+           
+        }
+        .c16{
+            background-color:chocolate;
+            grid-column:1/3;
+            grid-row: 1/2;   
+        }
+        .c17{
+            background-color: orange;
+            grid-column: 1/5;
+            grid-row: 3/4;
+        }
+        .c18{
+            background-color: rgb(4, 71, 4);
+            grid-column: 1/2;
+            grid-row: 2/3;
+            
+        }
+        .c19{
+            background-color:aquamarine;
+            grid-column: 2/5;
+            grid-row: 2/3;
+        }
+        .main5{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+            left: 370px;
+            top: -560px;
+        }
+        .c20{
+            background-color:red;
+        }
+
+        .c21{
+            background-color:chocolate;
+        }
+        .c22{
+            background-color: aqua;
+        }
+        .c23{
+            background-color: red;
+        }
+        .c24{
+            background-color: aqua;
+            
+        }
+        .c25{
+            background-color:chocolate;
+        }
+        .c26{
+            background-color:orange;
+        }
+        .c27{
+            background-color:green;
+        }
+        .c28{
+            background-color: chocolate;
+        }
+        .c29{
+            background-color: aqua;
+        }
+        .c30{
+            background-color:orange;
+            
+        }
+        .c31{
+            background-color:red;
+        }
+        .c32{
+            background-color: green;
+        }
+        .c33{
+            background-color:red;
+        }
+        .c34{
+            background-color: aqua;
+        }
+        .c35{
+            background-color:chocolate;
+        }
+        .c36{
+            background-color: green;
+            
+        }
+        .c37{
+            background-color:aquamarine;
+        }
+        .main6{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(5,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+            left: 740px;
+            top: -750px;
+            
+        }
+        .c39{
+            background-color:red;
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+        .c40{
+            background-color:green;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .c41{
+            background-color:orange;
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        .c42{
+            background-color:chocolate;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .c43{
+            background-color:green;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .c44{
+            background-color:aqua;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .c45{
+            background-color:orange;
+            grid-column: 1/3;
+            grid-row: 3/5;
+        }
+        .c46{
+            background-color:aqua;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        .c47{
+            background-color:red;
+            grid-column: 4/5;
+            grid-row: 3/4;
+        }
+        .c48{
+            background-color:green;
+            grid-column: 3/4;
+            grid-row: 4/5;
+        }
+        .c49{
+            background-color:aqua;
+            grid-column: 1/4;
+            grid-row: 5/6;
+        }
+        .c50{
+            background-color:orange;
+            grid-column: 4/5;
+            grid-row: 5/6;
+        }
+        .main7{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+            top: -740px;
+            
+        }
+        .c51{
+            background-color:orange;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .c52{
+            background-color:aqua;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .c53{
+            background-color:red;
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .c54{
+            background-color:green;
+            grid-column: 2/3;
+            grid-row: 2/4;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 7px;
+            padding: 10px;
+        }
+        .c541{
+            background-color:aqua;
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+        .c542{
+            background-color:rgb(4, 126, 126);
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .c543{
+            background-color:orange;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .main8{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+             top: -930px;
+            left:370px;
+            
+        }
+        .c55{
+            background-color:red;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        .c56{
+            background-color:orange;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .c57{
+            background-color:aqua;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+        .c58{
+            background-color:green;
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+        .c59{
+            background-color:rgb(3, 59, 3);
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+        .c60{
+            background-color:orange;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        .c61{
+            background-color:red;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .c62{
+            background-color:chocolate;
+            grid-column: 3/6;
+            grid-row: 2/3;
+        }
+        .c63{
+            background-color:aqua;
+            grid-column: 1/6;
+            grid-row: 3/4;
+        }
+        .main9{
+            background-color: gray;
+            height: 27vh;
+            width: 25vw;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 7px;
+            padding: 10px;
+            position: relative;
+             top: -1120px;
+            left: 740px;
+        }
+        .c64{
+            background-color:orange;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        .c65{
+            background-color:green;
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+        .c66{
+            background-color:aqua;
+            grid-column: 2/4;
+            grid-row: 2/3;
+        }
+        .c67{
+            background-color:red;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .c68{
+            background-color:orange;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+    <div class="main1">
+      <div class="c1"></div>
+      <div class="c2"></div>
+      <div class="c3"></div>
+      <div class="c4"></div>
+      <div class="c5"></div>
+      <div class="c6"></div>
+    </div>
+    <div class="main2">
+        <div class="c7"></div>
+        <div class="c8"></div>
+        <div class="c9"></div>
+        <div class="c10"></div>
+    </div>
+    <div class="main3">
+        <div class="c11"></div>
+        <div class="c12"></div>
+        <div class="c13"></div>
+        <div class="c14"></div>
+    </div>
+    <div class="main4">
+        <div class="c15"></div>
+        <div class="c16"></div>
+        <div class="c17"></div>
+        <div class="c18"></div>
+        <div class="c19"></div>
+    </div>
+    <div class="main5">
+        <div class="c20"></div>
+        <div class="c21"></div>
+        <div class="c22"></div>
+        <div class="c23"></div>
+        <div class="c24"></div>
+        <div class="c25"></div>
+        <div class="c26"></div>
+        <div class="c27"></div>
+        <div class="c28"></div>
+        <div class="c29"></div>
+        <div class="c30"></div>
+        <div class="c31"></div>
+        <div class="c32"></div>
+        <div class="c33"></div>
+        <div class="c34"></div>
+        <div class="c35"></div>
+        <div class="c36"></div>
+        <div class="c37"></div>
+        <div class="c38"></div>
+    </div>
+    <div class="main6">
+        <div class="c39"></div>
+        <div class="c40"></div>
+        <div class="c41"></div>
+        <div class="c42"></div>
+        <div class="c43"></div>
+        <div class="c44"></div>
+        <div class="c45"></div>
+        <div class="c46"></div>
+        <div class="c47"></div>
+        <div class="c48"></div>
+        <div class="c49"></div>
+        <div class="c50"></div>
+    </div>
+    <div class="main7">
+        <div class="c51"></div>
+        <div class="c52"></div>
+        <div class="c53"></div>
+        <div class="c54">
+            <div class="c541"></div>
+            <div class="c542"></div>
+            <div class="c543"></div>
+        </div>
+    </div>
+    <div class="main8">
+        <div class="c55"></div>
+        <div class="c56"></div>
+        <div class="c57"></div>
+        <div class="c58"></div>
+        <div class="c59"></div>
+        <div class="c60"></div>
+        <div class="c61"></div>
+        <div class="c62"></div>
+        <div class="c63"></div>
+    </div>
+    <div class="main9">
+        <div class="c64"></div>
+        <div class="c65"></div>
+        <div class="c66"></div>
+        <div class="c67"></div>
+        <div class="c68"></div>
+    </div>
+    </div>
+</body>
+</html>
